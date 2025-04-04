@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSEC ASTU Club</title>
+    <link rel="stylesheet" href="LandingPageHeader.css" />
+    <link rel="stylesheet" href="Landing.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_bar">
+          <h1 class="logo">CSEC<span>ASTU</span></h1>
+          <div class="menu_toggle" onclick="toggleMenu()">☰</div>
+          <ul class="links">
+              <li><a href="">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#division">Divisions</a> </li>
+              <li><a href="#mission">Mission</a></li>
+          </ul>
+              <script>
+                document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.querySelector('.introduction').scrollIntoView({ behavior: 'smooth' });
+                });
+                document.querySelector('a[href="#division"]').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+                });
+                document.querySelector('a[href="#mission"]').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.querySelector('.card-section').scrollIntoView({ behavior: 'smooth' });
+                });
+              </script>
+          <a href="Form.html" class="action_btn">Get Started</a>
+      </div>
+  </header>
+
+  <script>
+      function toggleMenu() {
+          const menuBar = document.querySelector('.menu_bar');
+          menuBar.classList.toggle('open');
+      }
+  </script>
+
+<header class="hero-section">
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="Resources/vid.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1 style="font-size: 150px ; " class="responsive-title"> CSEC-ASTU</h1>
+    <h1 class="responsive-subtitle">Welcome to Our Platform</h1>
+    <p>Discover the future of technology with us.</p>
+
+    <style>
+      @media (max-width: 768px) {
+        .responsive-title {
+          font-size: 80px !important;
+        }
+        .responsive-subtitle {
+          font-size: 1.5rem !important;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .responsive-title {
+          font-size: 50px !important;
+        }
+        .responsive-subtitle {
+          font-size: 1.2rem !important;
+        }
+      }
+    </style>
+    
+  </div>
+</header>
+
+      <div class="introduction">
+        <h2>Think-Create-Solve!</h2>
+        <p>
+          CSEC ASTU is a Computer Science Engineering Club at Adama Science and Technology 
+          University.The club provides mentorship, training, and resources to help students
+          improve their programming skills and participate in programming
+          contests,Bootcamps and Hackathons. By joining the club, students can enhance their
+          problem-solving and critical thinking abilities, improve their coding
+          efficiency, and gain valuable experience.
+        </p>
+        
+    </div>
+    
+    <h1 style="text-align: center;"> Mission and Vision</h1>
+    <section class="card-section">
+      <div class="card-container" >
+      
+        <div class="card">
+          <div class="icon">
+          <i class = 'fas fa-eye'></i>
+
+          </div>
+          <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Vision</h3>
+          <p style = "font-size: 1rem; line-height: 1.8;">
+            To inspire and prepare future leaders in science and technology.
+          </p>
+        </div>
+    
+       
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Mission</h3>
+          <p style = "font-size: 1rem; line-height: 1.8;"">
+            To empower students through knowledge and skills in science, engineering, and computing..
+          </p>
+        </div>
+    
+        
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Integrity</h3>
+          <p style = "font-size: 1rem; line-height: 1.8;">
+            Upholding the highest standards of honesty and ethical practices in all we do.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <h1 style="text-align: center; padding: 30px;">Our Divisions</h1>
+
+      <section class="about">
+       
+          <div class="main">
+            <h2>Competitive Programming Division</h2>
+            <p>
+              The Competitive Programming division is dedicated at enhancing coding skills and 
+              fostering a passion for problem-solving among its members. We provide a platform for 
+              students to engage in algorithmic challenges and participate in coding competitions
+              at local, national, and international levels.
+            </p>
+          </div>
+ 
+      
+          <div class="Cyber">
+            <h2>Cyber Security</h2>
+            <p>
+              The Cyber Security division is dedicated to fostering a community of
+              individuals interested in the field of cybersecurity. Our mission is to
+              educate, engage, and empower members with the knowledge and skills
+              necessary to protect information systems from cyber threats.
+            </p>
+          </div>
+      
+            <div class="Web">
+              <h2>Development</h2>
+              <p>
+              We are the web developers. Our mission is to foster a vibrant community of 
+              aspiring web developers, where members can learn, collaborate, and grow their skills in web 
+              technologies. Whether you're a complete beginner or an experienced coder,
+              you'll find a supportive environment to explore topics like HTML, CSS, JavaScript, and more.
+              </p> 
+            </div>
+      
+          <div class="Capacity">
+           <h2>Capacity Building</h2>
+           <p>
+            The Capacity Building Division focuses on empowering individuals and
+            enhancing their skills, knowledge, and abilities. The
+            division aims to provide a supportive environment for students to help them
+            achieve a good result at their academic performance by providing resources and tutorials.
+           </p>
+          </div>
+            
+          </div>
+          
+        </div>
+      </section>
+
+
+
+      <div class="info">
+        <h1>"The day has 24 hours. 6 hours we sleep, you have left 18 hours. So don't ever give me this thing, "I'm working 12 hours so I don't have time to PRACTICE and SOLVE"</h1>
+      </div>
+
+      <div class="CTA_type">
+        <a href="Form.html" class="action_btn">Code Your Future Here</a>
+      </div>
+      <h1 style="text-align: center; padding: 30px; margin : 40px 20px"> Our Best Memories</h1>
+
+      <div class="video-container">
+        <video controls autoplay muted loop>
+            <source src="Resources/vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <footer class="footer">
+        <div class="container-footer">
+         
+          <div class="footer-section about">
+            <h3>CSEC-ASTU</h3>
+           
+          </div>
+      
+    
+          <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#vision">Vision</a></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#integrity">Integrity</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> ASTU, Adama, Ethiopia</p>
+            <p><i class="fas fa-phone-alt"></i> +251912345678</p>
+          
+          </div>
+      
+      
+          <div class="footer-section social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      
+   
+        <div class="footer-bottom">
+          <p>&copy; 2024 CSEC-ASTU. All rights reserved.</p>
+        </div>
+      </footer>
+      
+
+    
+
+
+  </body>
+</html>
